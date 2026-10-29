@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Manas Kohli} \\ \vspace{1pt}
+    \small 438-979-5298 $|$ \href{mailto:x@x.com}{\underline{manaskohli6@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/manas-kohli}{\underline{linkedin.com/in/manas-kohli}} $|$
+    \href{https://github.com/ManasKohli}{\underline{github.com/ManasKohli}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Toronto}{Toronto, ON}
+      {Bachelor of Science in Computer Science, Minor in Mathematics, GPA: 3.8}{Sep. 2025 -- May 2029}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Intern}{May 2026 -- Aug. 2026}
+      {Pambii AI}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Developed FastAPI backend and React features for an AI compliance platform, containerized services with Docker, and
+deployed to Google Cloud Run to support scalable production workloads}
+        \resumeItem{Designed and validated REST APIs, improving reliability and reducing integration bugs by 30\% through comprehensive
+Postman test suites and automated CI testing}
+        \resumeItem{Built an automated California Prop 65 audit pipeline that parses Excel submissions, extracts compliance data from documents and part numbers, and uses Claude and Gemini in a multi-model workflow to classify substances and generate audit reports}
+        \resumeItem{Built an AI compliance copilot with NLP pipelines, reducing compliance document preparation time by 40\% in pilot runs}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Frontend Engineering Intern}{May 2025 -- Aug. 2025}
+      {Matt and Nat}{Montreal, QC}
+      \resumeItemListStart
+        \resumeItem{Communicate with managers to set up campus computers used on campus}
+        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{F1 Strategist} $|$ \emph{FastAPI, Scikit-Learn, React, GCP}}{June 2026 -- Aug. 2026}
+          \resumeItemListStart
+            \resumeItem{Engineered a 35-feature Random Forest regression pipeline with 5,000 decision trees to predict laps until a driver’s next pit stop using historical F1 race, tire, weather, and track-condition data}
+            \resumeItem{Built a FastAPI backend and React simulator that transformed user-defined race states into model-ready features and delivered real-time pit-stop predictions through a REST API}
+            \resumeItem{Containerized and deployed the ML inference service to Google Cloud Run and the React frontend to Vercel, creating a production-style cloud architecture for end-to-end model serving}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Crewlee} $|$ \emph{FastAPI, PostgreSQL, GCP }}{Aug. 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Engineered a RAG-based AI knowledge system that retrieves context from restaurant SOPs, recipes, checklists, and policies
+to generate context-aware responses and streamline employee training and operations}
+            \resumeItem{Built and deployed the backend using FastAPI, PostgreSQL, Docker, and Google Cloud Run; demoed the platform to the Baton Rouge restaurant, generating interest in expanding to additional restaurant partners}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: React, FastAPI, PostgreSQL, Next.js} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Claude Code, Codex, Supabase, Postman} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
